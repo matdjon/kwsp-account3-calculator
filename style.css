@@ -37,6 +37,16 @@ html {
     margin: 1em;
 }
 
+#acc2-error {
+    display: none;
+    position: absolute;
+    color: red;
+}
+
+#btn-calc {
+    margin-top: 2em;
+}
+
 .result {
     background-color: white;
     padding: 2em 4em;
