@@ -99,6 +99,20 @@ footer {
     }
 }
 
+.footer-link {
+    padding-left: 0;
+}
+
+.footer-link img {
+    width: 32px;
+}
+
+.footer-link li {
+    list-style: none;
+    margin: 1%;
+    display: inline;
+}
+
 /* Override bootstrap styles */
 #acc1.form-control, #acc2.form-control {
     display: initial;
