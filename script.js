@@ -8,8 +8,8 @@ const KwspAccount3Calculator = class {
     static newAcc3Bal;
 
     static initialise() {
-        this.acc1Bal = document.getElementById("acc1").value;
-        this.acc2Bal = document.getElementById("acc2").value;
+        this.acc1Bal = parseFloat(document.getElementById("acc1").value);
+        this.acc2Bal = parseFloat(document.getElementById("acc2").value);
 
         this.calculate();
         this.showResult();
