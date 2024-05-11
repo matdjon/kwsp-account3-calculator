@@ -33,6 +33,17 @@ html {
     top: 1em;
 }
 
+.lang {
+    position: absolute;
+    top: 1em;
+}
+.lang-en {
+    right: 1em;
+}
+.lang-bm {
+    right: 4em;
+}
+
 .input-div {
     margin: 1em;
 }
