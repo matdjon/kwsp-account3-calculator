@@ -8,8 +8,8 @@ const KwspAccount3Calculator = class {
     static newAcc3Bal;
 
     static initialise() {
-        this.acc1Bal = parseInt(document.getElementById("acc1").value);
-        this.acc2Bal = parseInt(document.getElementById("acc2").value);
+        this.acc1Bal = document.getElementById("acc1").value;
+        this.acc2Bal = document.getElementById("acc2").value;
 
         this.calculate();
         this.showResult();
@@ -29,6 +29,9 @@ const KwspAccount3Calculator = class {
             this.newAcc2Bal = 0;
             this.newAcc3Bal = this.acc2Bal;
         }
+        this.newAcc1Bal = (round(this.newAcc1Bal, 2)).toFixed(2);
+        this.newAcc2Bal = (round(this.newAcc2Bal, 2)).toFixed(2);
+        this.newAcc3Bal = (round(this.newAcc3Bal, 2)).toFixed(2);
     }
     static showResult() {
         document.getElementById("new-acc1-bal").innerText = this.newAcc1Bal;
@@ -39,4 +42,8 @@ const KwspAccount3Calculator = class {
 
 function calculate() {
     KwspAccount3Calculator.initialise();
+}
+
+function round(value, decimals) {
+    return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
 }
